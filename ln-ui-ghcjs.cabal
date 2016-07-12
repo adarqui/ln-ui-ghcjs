@@ -20,6 +20,7 @@ executable ln-ui-ghcjs-exe
   build-depends:       base
                      , reflex == 0.4.0
                      , reflex-dom == 0.3
+                     , ln-ui
   default-language:    Haskell2010
 
 source-repository head
