@@ -15,7 +15,7 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-6.7
+resolver: lts-5.18
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -37,7 +37,6 @@ resolver: lts-6.7
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - '.'
-- '../ln-ui'
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 extra-deps:
@@ -45,7 +44,6 @@ extra-deps:
   - haskell-src-exts-1.16.0.1
   - reflex-0.4.0
   - reflex-dom-0.3
-  - reflex-dom-contrib-0.4.1
   - ref-tf-0.4
 
 # Override default flag values for local packages and extra-deps
@@ -72,10 +70,10 @@ extra-package-dbs: []
 # Allow a newer minor version of GHC than the snapshot specifies
 # compiler-check: newer-minor
 
-compiler: ghcjs-0.2.0.20160712_ghc-7.10.2
+compiler: ghcjs-0.2.0.20160528_ghc-7.10.2
 compiler-check: match-exact
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.20160712_ghc-7.10.2:
-        url: "http://ghcjs.luite.com/master-20160712.tar.gz"
+      ghcjs-0.2.0.20160528_ghc-7.10.2:
+        url: "http://ghcjs.luite.com/master-20160528.tar.gz"
