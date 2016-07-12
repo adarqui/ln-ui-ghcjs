@@ -17,6 +17,7 @@ allow-newer: true
 packages:
 - location: '.'
 - '../ln-ui'
+- '../haskell-ln-types'
 - '../haskell-ebyam'
 - '../haskell-rehtie'
 - '../haskell-api-helpers'
