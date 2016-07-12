@@ -19,6 +19,7 @@ packages:
 - '../ln-ui'
 - '../haskell-ebyam'
 - '../haskell-rehtie'
+- '../haskell-api-helpers'
 - location:
     git: https://github.com/ryantrinkle/reflex.git
     commit: f8338f6b68c9be4e8dcddbbab2098aeffa018535
