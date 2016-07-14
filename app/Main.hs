@@ -6,8 +6,10 @@ module Main (
 
 
 
-import           LN.UI.Main (runMain)
+import           LN.UI.Main (runReactMain)
 import Haskell.Api.Helpers
+
+
 
 data Test
   = Test1
@@ -20,4 +22,4 @@ instance QueryParam Test where
 
 
 main :: IO ()
-main = runMain
+main = runReactMain

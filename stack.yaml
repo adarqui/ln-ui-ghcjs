@@ -1,4 +1,3 @@
-
 flags: {}
 
 resolver: lts-6.6
@@ -17,28 +16,16 @@ allow-newer: true
 packages:
 - location: '.'
 - '../ln-ui'
+- '../ln-sanitize'
+- '../ln-validate'
 - '../haskell-ln-types'
+- '../haskell-api-helpers'
 - '../haskell-ebyam'
 - '../haskell-rehtie'
-- '../haskell-api-helpers'
-- location:
-    git: https://github.com/ryantrinkle/reflex.git
-    commit: f8338f6b68c9be4e8dcddbbab2098aeffa018535
-# 3a7fb30dde160bc31c0bba4f42f7666ea6ca054a
-  extra-dep: true
-- location:
-    git: https://github.com/ryantrinkle/reflex-dom.git
-    commit: e8b7d31fd2b6a8173e51096b7591ec346e33ad85
-# 5318d581fe3ef7b2b0f70ac352d6c56700124b98
-  extra-dep: true
-- location:
-     git: https://github.com/isomorphism/these.git
-     commit: cf68c46bd049d23938f351da5618e9a09ef1102c
-- location:
-     git: https://github.com/reflex-frp/reflex-dom-contrib.git
-     commit: d07180518168fb68a9ac2ec2df71f670e8d85e6b
+- '../haskell-ifte'
 
 extra-deps:
 - ref-tf-0.4
 - these-0.6.1.0
+- react-flux-1.1.1
 - ghcjs-dom-0.2.4.0
