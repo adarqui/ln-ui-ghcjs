@@ -23,6 +23,8 @@ packages:
 - '../haskell-ebyam'
 - '../haskell-rehtie'
 - '../haskell-ifte'
+- '../ghcjs-router'
+- '../react-flux-router'
 
 extra-deps:
 - ref-tf-0.4
