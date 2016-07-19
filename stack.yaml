@@ -25,6 +25,7 @@ packages:
 - '../haskell-ifte'
 - '../ghcjs-router'
 - '../react-flux-router'
+- '../web-routes'
 
 extra-deps:
 - ref-tf-0.4
