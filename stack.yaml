@@ -18,6 +18,7 @@ packages:
 - '../ln-ui'
 - '../ln-sanitize'
 - '../ln-validate'
+- '../ln-api-ghcjs'
 - '../haskell-ln-types'
 - '../haskell-api-helpers-shared'
 - '../haskell-api-helpers-ghcjs'
