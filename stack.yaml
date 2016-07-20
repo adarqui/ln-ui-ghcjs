@@ -19,13 +19,15 @@ packages:
 - '../ln-sanitize'
 - '../ln-validate'
 - '../haskell-ln-types'
-- '../haskell-api-helpers'
+- '../haskell-api-helpers-shared'
+- '../haskell-api-helpers-ghcjs'
 - '../haskell-ebyam'
 - '../haskell-rehtie'
 - '../haskell-ifte'
 - '../ghcjs-router'
+- '../ghcjs-ajax/ghcjs-ajax'
 - '../react-flux-router'
-- '../web-routes'
+- '../web-routes' ## <-- remove if PR gets accepted
 
 extra-deps:
 - ref-tf-0.4
