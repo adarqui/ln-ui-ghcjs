@@ -15,3 +15,4 @@ build-web:
 
 production: build-web
 	ccjs static/dist/all.js --compilation_level=ADVANCED_OPTIMIZATIONS > static/dist/all.min.js
+	zopfli -i1000 static/dist/all.min.js > static/dist/all.min.js.gz
