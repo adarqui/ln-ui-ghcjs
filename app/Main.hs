@@ -4,7 +4,7 @@ module Main (
 
 
 
-import           LN.UI.Main (runReactMain)
+import           LN.UI.ReactFlux.Main (runReactMain)
 
 
 

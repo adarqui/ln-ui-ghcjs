@@ -15,7 +15,8 @@ allow-newer: true
 
 packages:
 - location: '.'
-- '../ln-ui'
+- '../ln-ui-core'
+- '../ln-ui-reactflux'
 - '../ln-sanitize'
 - '../ln-validate'
 - '../ln-api-ghcjs'
