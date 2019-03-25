@@ -1,26 +1,26 @@
+resolver: lts-6.30
 flags: {}
 
-resolver: lts-6.6
-compiler: ghcjs-0.2.0.900006006_ghc-7.10.3
-
+compiler: ghcjs-0.2.0.9006030_ghc-7.10.3
 compiler-check: match-exact
 
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.900006006_ghc-7.10.3:
-         url: "https://tolysz.org/ghcjs/lts-6.6-900006006.tar.gz"
+      ghcjs-0.2.0.9006030_ghc-7.10.3:
+         url: http://ghcjs.tolysz.org/lts-6.30-9006030.tar.gz
+         sha1: 2371e2ffe9e8781808b7a04313e6a0065b64ee51
 
 allow-newer: true
 
 packages:
 - location: '.'
-- '../ln-ui-core'
-- '../ln-ui-reactflux'
-- '../ln-sanitize'
-- '../ln-validate'
-- '../ln-api-ghcjs'
-- '../haskell-ln-types'
+- '../lnforum-ui-core'
+- '../lnforum-ui-reactflux'
+- '../lnforum-sanitize'
+- '../lnforum-validate'
+- '../lnforum-api-ghcjs'
+- '../lnforum-types-gen'
 - '../haskell-api-helpers-shared'
 - '../haskell-api-helpers-ghcjs'
 - '../haskell-either-helpers'
@@ -28,6 +28,10 @@ packages:
 - '../haskell-rehtie'
 - '../haskell-ifte'
 - '../haskell-web-bootstrap'
+- '../haskell-bbcode-parser'
+- '../haskell-bbcode-parser-reactflux'
+- '../haskell-media-embed'
+- '../haskell-media-embed-reactflux'
 - '../ghcjs-router'
 - '../ghcjs-ajax/ghcjs-ajax'
 - '../react-flux-router'
@@ -38,3 +42,4 @@ extra-deps:
 - these-0.6.1.0
 - react-flux-1.1.1
 - ghcjs-dom-0.2.4.0
+- html-entities-1.1.4.2

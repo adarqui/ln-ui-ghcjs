@@ -1,8 +1,8 @@
-name:                ln-ui-ghcjs
+name:                lnforum-ui-ghcjs
 version:             0.1.0.0
 synopsis:            Initial project template from stack
 description:         Please see README.md
-homepage:            https://github.com/adarqui/ln-ui-ghcjs#readme
+homepage:            https://github.com/adarqui/lnforum-ui-ghcjs#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Andrew Darqui
@@ -13,18 +13,20 @@ build-type:          Simple
 -- extra-source-files:
 cabal-version:       >=1.10
 
-executable ln-ui-ghcjs-exe
+executable lnforum-ui-ghcjs-exe
   hs-source-dirs:      app
   main-is:             Main.hs
   build-depends:       base
                      , react-flux == 1.1.1
-                     , ln-ui-reactflux
+                     , lnforum-ui-reactflux
   if impl(ghcjs)
-      build-depends: ghcjs-base
+      build-depends: ghcjs-base, lnforum-api-ghcjs
+  else
+      build-depends: lnforum-api
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   cpp-options:         -DGHCJS_BROWSER
   default-language:    Haskell2010
 
 source-repository head
   type:     git
-  location: https://github.com/adarqui/ln-ui-ghcjs
+  location: https://github.com/adarqui/lnforum-ui-ghcjs
